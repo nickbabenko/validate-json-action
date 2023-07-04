@@ -7,6 +7,7 @@ class SchemaValidator {
 
     constructor() {
         this.schemaValidator = new Ajv({ allErrors: true, jsonPointers: true, loadSchema: this.loadSchema });
+        require('ajv-keywords')(this.schemaValidator);
     }
 
     public instance(): Ajv.Ajv {

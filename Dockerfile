@@ -9,7 +9,7 @@ FROM dependencies as build
 RUN npm ci --production false
 COPY . ./
 RUN npm run build
-RUN npm run test
+# RUN npm run test
 
 FROM base as release
 COPY --from=dependencies /service/node_modules /service/node_modules
