@@ -27,7 +27,8 @@
     "ajv": "^6.10.2",
     "better-ajv-errors": "^0.6.7",
     "chalk": "^2.4.2",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "ajv-keywords": "^5.1.0"
   },
   "devDependencies": {
     "@types/node": "^12.12.6",
